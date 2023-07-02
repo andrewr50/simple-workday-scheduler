@@ -13,6 +13,7 @@ $(document).ready(function () {
   function updateTime() {
     var time = dayjs().hour();
 
+    // updates the styling of classes based on time of day
     $('.time-block').each(function () {
       var hour = parseInt($(this).attr('id').split('-')[1])
 
